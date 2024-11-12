@@ -1,0 +1,15 @@
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
+anything = input("Tell me anything...")
+print("Hmm...", anything, "...Really?")
+
+a = int(input("Give any number"))
+print("Given Number by user is:", a)
+#a = int(a)
+b = a * 10
+print(b)
+first = input("First Name =")
+last = input("Last Name =")
+print("Thank You")
+print("\n You name is" + " " + first + " " + last )

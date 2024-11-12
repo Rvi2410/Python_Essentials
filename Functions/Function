@@ -1,0 +1,35 @@
+if a particular fragment of the code begins to appear in more than one place,
+consider the possibility of isolating it in the form of a function invoked from the points where the original code was placed before.
+
+We can now state the second condition: if a piece of code becomes so large that reading and understating it may cause a problem,
+consider dividing it into separate, smaller problems, and implement each of them in the form of a separate function.
+
+This decomposition continues until you get a set of short functions, easy to understand and test.
+
+////////////FUNCTION///////////////
+You need to define it. The word define is significant here.
+This is what the simplest function definition looks like:
+
+def function_name():
+    function_body
+
+def your_function(optional parameters):
+    # the body of the function
+
+It always starts with the keyword def (for define)
+next after def goes the name of the function (the rules for naming functions are exactly the same as for naming variables)
+after the function name, there's a place for a pair of parentheses (they contain nothing here, but that will change soon)
+the line has to be ended with a colon;
+the line directly after def begins the function body ‒ a couple (at least one) of necessarily nested instructions,
+which will be executed every time the function is invoked; note: the function ends where the nesting ends, so you have to be careful.
+
+
+#################################################
+How function works?
+=> Look at the picture on the right.
+=> It tries to show you the whole process:
+
+=> When you invoke a function, Python remembers the place where it happened and jumps into the invoked function;
+=> The body of the function is then executed;
+=> Reaching the end of the function forces Python to return to the place directly after the point of invocation.
+=> Function must be defined before its execution, else gives error
